@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="AutoMobileComapny.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AutoMobileCompany</title>
+    <link href="CSS/AutoApp.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <div id="header" style="border-radius: 10px; margin: 5px;">
+                <div class="logo welcome_txt" style="margin-top: 13px;">Automobile Company</div>
+                <div class="clear"></div>
+            </div>
+            <div class="case_info" style="margin: 5px; border-radius: 7px;">
+                <table width="100%">
+                    <tr>
+                        <td width="35%">
+                            <div class="welcome_txt" style="padding-left: 7px;">Welcome Guest</div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
